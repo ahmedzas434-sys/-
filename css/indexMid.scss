@@ -1,0 +1,259 @@
+@media (max-width: 1280px) {
+  main {
+    & > .right {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      padding: 23px 0px;
+      text-align: center;
+      overflow-y: hidden;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      .name-global {
+        .top-content {
+          display: none;
+        }
+
+        .top-icon {
+          height: 40px;
+          width: 40px;
+          margin-inline: auto;
+        }
+      }
+
+      .pages {
+        p {
+          margin-inline: auto;
+          padding: 10px;
+          width: -webkit-fit-content;
+          width: -moz-fit-content;
+          width: fit-content;
+          span {
+            display: none;
+          }
+        }
+      }
+
+      .bottom {
+        & > span {
+          display: none;
+        }
+
+        .bottom-contents {
+          .bottom-content {
+            &:hover {
+              -webkit-transform: translateX(0px);
+              -ms-transform: translateX(0px);
+              transform: translateX(0px);
+              background-color: unset;
+            }
+
+            &:hover .bottom-icon {
+              -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.078);
+              box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.078);
+            }
+            span {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    & > .left {
+      #main-section {
+        -ms-grid-columns: (calc(calc(100% - 20px) / 2));
+        grid-template-columns: repeat(2, calc(calc(100% - 20px) / 2));
+        grid-template-areas:
+          "header header"
+          "cards cards"
+          "active Income"
+          "table-content table-content"
+          "pill Account-Summary"
+          "Budget-Overview  Payment-Methods";
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  main {
+    & > .left {
+      #main-section {
+        #cards {
+          .card {
+            h2 {
+              font-size: 24px;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    & > .right {
+      display: none;
+    }
+
+    & > .left {
+      #main-section {
+        -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+        grid-template-areas:
+          "header"
+          "cards"
+          "active"
+          "table-content"
+          "pill"
+          "Account-Summary"
+          "Budget-Overview"
+          "Income"
+          "Payment-Methods";
+
+        #cards {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+          align-items: stretch;
+
+          .card {
+            width: 100%;
+          }
+        }
+
+        #table-content {
+          overflow-y: auto;
+
+          table {
+            width: 642px;
+          }
+        }
+
+        #Payment-Methods {
+          height: 800px;
+
+          .cards {
+            .card {
+              .front,
+              .back {
+                padding: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  main {
+    & > .left {
+      #main-section {
+        #header {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+          align-items: stretch;
+
+          .name-global {
+            & > span {
+              display: none;
+            }
+
+            .top-icon {
+              height: 50px;
+              width: 50px;
+              font-size: 18px;
+            }
+
+            .top-content {
+              h1 {
+                font-size: 24px;
+                line-height: 25px;
+              }
+
+              span {
+                font-size: 12px;
+              }
+            }
+          }
+
+          .left {
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            margin-block: 15px 12px;
+
+            .icons {
+              .icon {
+                font-size: 12px;
+                height: 30px;
+                width: 30px;
+                background-color: white;
+
+                span {
+                  font-size: 9px;
+                  height: 12px;
+                  width: 12px;
+                }
+              }
+            }
+
+            .card-header {
+              padding: 8px 10px;
+
+              p {
+                display: none;
+              }
+
+              .img {
+                width: 35px;
+              }
+            }
+          }
+
+          & > span {
+            display: block;
+          }
+        }
+
+        #cards {
+          .card {
+            h2 {
+              font-size: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  main {
+    & > .left {
+      #main-section {
+        #header {
+          & > span {
+            &::after {
+              inset: 50% 41% auto auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
