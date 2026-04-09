@@ -1,10 +1,10 @@
-@media (max-width: 1280px) {
+@media (max-width: 80rem) {
   main {
     & > .right {
       width: -webkit-fit-content;
       width: -moz-fit-content;
       width: fit-content;
-      padding: 23px 0px;
+      padding: 1.4375rem 0rem;
       text-align: center;
       overflow-y: hidden;
       &::-webkit-scrollbar {
@@ -17,8 +17,8 @@
         }
 
         .top-icon {
-          height: 40px;
-          width: 40px;
+          height: 2.5rem;
+          width: 2.5rem;
           margin-inline: auto;
         }
       }
@@ -26,7 +26,7 @@
       .pages {
         p {
           margin-inline: auto;
-          padding: 10px;
+          padding: 0.625rem;
           width: -webkit-fit-content;
           width: -moz-fit-content;
           width: fit-content;
@@ -44,15 +44,15 @@
         .bottom-contents {
           .bottom-content {
             &:hover {
-              -webkit-transform: translateX(0px);
-              -ms-transform: translateX(0px);
-              transform: translateX(0px);
+              -webkit-transform: translateX(0rem);
+              -ms-transform: translateX(0rem);
+              transform: translateX(0rem);
               background-color: unset;
             }
 
             &:hover .bottom-icon {
-              -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.078);
-              box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.078);
+              -webkit-box-shadow: 0rem 0rem 0.3125rem rgba(0, 0, 0, 0.078);
+              box-shadow: 0rem 0rem 0.3125rem rgba(0, 0, 0, 0.078);
             }
             span {
               display: none;
@@ -64,8 +64,8 @@
 
     & > .left {
       #main-section {
-        -ms-grid-columns: (calc(calc(100% - 20px) / 2));
-        grid-template-columns: repeat(2, calc(calc(100% - 20px) / 2));
+        -ms-grid-columns: (calc(calc(100% - 1.25rem) / 2));
+        grid-template-columns: repeat(2, calc(calc(100% - 1.25rem) / 2));
         grid-template-areas:
           "header header"
           "cards cards"
@@ -78,14 +78,14 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 64rem) {
   main {
     & > .left {
       #main-section {
         #cards {
           .card {
             h2 {
-              font-size: 24px;
+              font-size: 1.5rem;
               font-weight: 600;
             }
           }
@@ -95,7 +95,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   main {
     & > .right {
       display: none;
@@ -134,18 +134,18 @@
           overflow-y: auto;
 
           table {
-            width: 642px;
+            width: 40.125rem;
           }
         }
 
         #Payment-Methods {
-          height: 800px;
+          height: 50rem;
 
           .cards {
             .card {
               .front,
               .back {
-                padding: 30px;
+                padding: 1.875rem;
               }
             }
           }
@@ -155,7 +155,7 @@
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 40rem) {
   main {
     & > .left {
       #main-section {
@@ -174,19 +174,19 @@
             }
 
             .top-icon {
-              height: 50px;
-              width: 50px;
-              font-size: 18px;
+              height: 3.125rem;
+              width: 3.125rem;
+              font-size: 1.125rem;
             }
 
             .top-content {
               h1 {
-                font-size: 24px;
-                line-height: 25px;
+                font-size: 1.5rem;
+                line-height: 1.5625rem;
               }
 
               span {
-                font-size: 12px;
+                font-size: 0.75rem;
               }
             }
           }
@@ -195,32 +195,32 @@
             -webkit-box-pack: justify;
             -ms-flex-pack: justify;
             justify-content: space-between;
-            margin-block: 15px 12px;
+            margin-block: 0.9375rem 0.75rem;
 
             .icons {
               .icon {
-                font-size: 12px;
-                height: 30px;
-                width: 30px;
+                font-size: 0.75rem;
+                height: 1.875rem;
+                width: 1.875rem;
                 background-color: white;
 
                 span {
-                  font-size: 9px;
-                  height: 12px;
-                  width: 12px;
+                  font-size: 0.5625rem;
+                  height: 0.75rem;
+                  width: 0.75rem;
                 }
               }
             }
 
             .card-header {
-              padding: 8px 10px;
+              padding: 0.5rem 0.625rem;
 
               p {
                 display: none;
               }
 
               .img {
-                width: 35px;
+                width: 2.1875rem;
               }
             }
           }
@@ -233,7 +233,7 @@
         #cards {
           .card {
             h2 {
-              font-size: 30px;
+              font-size: 1.875rem;
             }
           }
         }
@@ -242,7 +242,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 25rem) {
   main {
     & > .left {
       #main-section {
